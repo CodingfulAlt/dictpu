@@ -20,7 +20,6 @@ body {
     color: #f0f0f0;
 }
 
-
 .container {
     background-color: inherit;
     padding: 20px;
@@ -31,14 +30,12 @@ body {
     text-align: center;
 }
 
-
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
-
 
 @keyframes title-entry {
     from {
@@ -49,7 +46,6 @@ body {
         transform: translateY(0);
     }
 }
-
 
 .mode-icon {
     cursor: pointer;
@@ -71,7 +67,6 @@ body {
     cursor: pointer;
     transition: color 0.3s;
 }
-
 
 .search-box {
     margin-bottom: 10px;
@@ -97,10 +92,8 @@ button {
 }
 
 button:hover {
-
     animation: shake 0.5s ease-in-out;
 }
-
 
 #meaning-container {
     text-align: left;
@@ -111,7 +104,6 @@ button:hover {
     display: none;
 }
 
-
 audio {
     width: 100%;
     margin-top: 10px;
@@ -120,7 +112,6 @@ audio {
 audio.hidden {
     display: none;
 }
-
 
 @media (max-width: 600px) {
     body {
@@ -134,10 +125,8 @@ audio.hidden {
     input[type="text"],
     audio {
         width: 100%;
-
     }
 }
-
 
 .suggestions {
     margin: 10px 0;
@@ -152,4 +141,27 @@ audio.hidden {
 .suggestions span {
     margin-right: 10px;
     text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s, border-top-color 0.3s;
+}
+
+.light-mode .footer {
+    background-color: #f1f1f1;
+    color: #333;
+    border-top-color: #ccc;
+}
+
+.dark-mode .footer {
+    background-color: #333;
+    color: #f0f0f0;
+    border-top-color: #444;
 }
