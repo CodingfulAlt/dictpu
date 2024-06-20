@@ -1,0 +1,1 @@
+https://dictpu.netlify.app  to access the site
